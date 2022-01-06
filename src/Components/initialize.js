@@ -1,9 +1,10 @@
-import React, {useState} from "react";
+import React, {useReducer, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {requiredNumberOfDigits} from "../Utils/Validators/initAppValidator";
 import {createRandomDigit, defineNumberOfDigits, setError} from "../Redux/actions";
 import {Alert} from "./Alert";
 import {createRandomDigits} from "../Utils/Business_Logic/bl";
+import {rootReducer} from "../Redux/rootReducer";
 
 export const Init = () => {
     const dispatch = useDispatch();
@@ -35,9 +36,9 @@ export const Init = () => {
             <button className="btn btn-primary" onClick={() => {
                 if (requiredNumberOfDigits(numberOfDigits)) {
                     dispatch(setError(''));
-                    dispatch(createRandomDigit(createRandomDigits(numberOfDigi)));
-                    console.log(hiddenNumber);
+                    dispatch(createRandomDigit(createRandomDigits(numberOfDigits)));
                     console.log(numberOfDigi);
+                    console.log(hiddenNumber);
                 } else {
                     dispatch(setError('Необходимо выбрать количество цифр, которые вы будете отгадывать'));
                 }

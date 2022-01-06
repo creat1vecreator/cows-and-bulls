@@ -10,7 +10,7 @@ const initialState = {
 export const checkGameReducer = (state = initialState, action) => {
     switch (action.type) {
         case ADD_MOVE:
-            return{...state, numberOfMoves: this.numberOfMoves++}
+            return{...state, numberOfMoves: state.numberOfMoves}
         default: return state;
 
     }

@@ -1,6 +1,6 @@
 import {CREATE_RANDOM_NUMBER, DEFINE_NUMBER_OF_DIGITS, SET_ERROR, START_NEW_GAME} from "./types";
 
-const initialState = {
+export const initialState = {
     numberOfDigits: '',
     hiddenNumber: '',
     error: '',
