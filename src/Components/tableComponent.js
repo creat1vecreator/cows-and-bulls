@@ -1,4 +1,7 @@
+import {useSelector} from "react-redux";
+
 export const Table = () => {
+    const cows = useSelector(state => state.check.cows);
     return(
         <table className="table">
             <thead>

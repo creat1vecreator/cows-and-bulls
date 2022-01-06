@@ -7,9 +7,9 @@ import {createRandomDigits} from "../Utils/Business_Logic/bl";
 
 export const Init = () => {
     const dispatch = useDispatch();
-    const error = useSelector(state => state.error);
-    const hiddenNumber = useSelector(state => state.hiddenNumber);
-    const numberOfDigi = useSelector(state => state.numberOfDigits);
+    const error = useSelector(state => state.init.error);
+    const hiddenNumber = useSelector(state => state.init.hiddenNumber);
+    const numberOfDigi = useSelector(state => state.init.numberOfDigits);
 
     const [numberOfDigits, setNumberOfDigits] = useState('');
 
