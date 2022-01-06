@@ -1,16 +1,17 @@
 import React, {useState} from "react";
-export const FormComponent = () => {
+export const Form = () => {
     let [value, setValue] = useState("");
+
     return(
         <form>
         <div className="form-group">
-            <label htmlFor="exampleInputPassword1">Password</label>
-            <input type="text" className="form-control"
+            <label htmlFor="checking-numbers">Введите цифры</label>
+            <input type="text" className="checking-numbers"
                    id="lala"
             value={value}
             onChange={(evt) => setValue(evt.target.value)}/>
         </div>
-            <button className="btn btn-primary" type="submit">Проверить</button>
+            <button className="btn btn-primary">Проверить</button>
         </form>
     )
 }
