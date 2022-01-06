@@ -4,9 +4,8 @@
     <list default="true" id="8a2fd8ac-9916-45c3-a6c5-36b73ba868bb" name="Changes" comment="divided logic, but can not access to variables from store.init">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/initialize.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/initialize.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/checkingReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/checkingReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/initGameReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/initGameReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/rootReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/rootReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +47,7 @@
       <updated>1641413408899</updated>
       <workItem from="1641413410694" duration="11000" />
       <workItem from="1641414649355" duration="18662000" />
-      <workItem from="1641481320301" duration="954000" />
+      <workItem from="1641481320301" duration="3308000" />
     </task>
     <task id="LOCAL-00001" summary="problems with redux">
       <created>1641476512495</created>
@@ -78,7 +77,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641478999816</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="divided logic, but can not access to variables from store.init">
+      <created>1641488219637</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1641488219637</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

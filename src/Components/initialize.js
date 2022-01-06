@@ -18,10 +18,10 @@ export const Init = () => {
     return (
         <div>
             <select className="custom-select" onChange={(evt) => {
+
                 setNumberOfDigits(evt.target.value);
                 if (requiredNumberOfDigits(numberOfDigits)) {
                     dispatch(defineNumberOfDigits(numberOfDigits));
-                    console.log(numberOfDigits);
 
                 }
 
@@ -36,15 +36,16 @@ export const Init = () => {
             <button className="btn btn-primary" onClick={() => {
                 if (requiredNumberOfDigits(numberOfDigits)) {
                     dispatch(setError(''));
-                    dispatch(createRandomDigit(createRandomDigits(numberOfDigits)));
-                    console.log(numberOfDigi);
-                    console.log(hiddenNumber);
+                    dispatch(createRandomDigit(numberOfDigits));
                 } else {
                     dispatch(setError('Необходимо выбрать количество цифр, которые вы будете отгадывать'));
                 }
             }}>Начать игру
             </button>
             {error && <Alert text={error}/>}
+            {console.log(numberOfDigi)}
+            {console.log(hiddenNumber)}
+
 
         </div>
 

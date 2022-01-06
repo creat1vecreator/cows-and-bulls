@@ -6,20 +6,20 @@ import {createRandomDigits} from "../Utils/Business_Logic/bl";
 export const setError = (message) => {
     return {
         type: SET_ERROR,
-        error: message
+        payload: message
     }
 }
 export const createRandomDigit = (numberOfDigits) => {
     return {
     type: CREATE_RANDOM_NUMBER,
-        hiddenNumber: createRandomDigits(numberOfDigits),
+        payload: createRandomDigits(numberOfDigits),
     }
 }
 
 export const defineNumberOfDigits = (numberOfDigits) => {
     return {
         type: DEFINE_NUMBER_OF_DIGITS,
-        numberOfDigits,
+        payload: numberOfDigits,
     }
 }
 

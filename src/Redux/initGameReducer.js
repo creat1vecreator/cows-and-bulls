@@ -10,13 +10,11 @@ export const initialState = {
 export const initGameReducer = (state = initialState, action) => {
     switch (action.type) {
         case SET_ERROR:
-            return {...state, error: action.error}
-        case START_NEW_GAME:
-            return {...state, numberOfDigits: action.numberOfDigits}
+            return {...state, error: action.payload}
         case CREATE_RANDOM_NUMBER:
-            return {...state, hiddenNumber: action.hiddenNumber}
+            return {...state, hiddenNumber: action.payload}
         case DEFINE_NUMBER_OF_DIGITS:
-            return {...state, numberOfDigits: action.numberOfDigits}
+            return {...state, numberOfDigits: action.payload}
         default: return state;
     }
 }
