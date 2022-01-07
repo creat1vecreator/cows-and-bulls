@@ -1,29 +1,22 @@
-import React, {useReducer, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {requiredNumberOfDigits} from "../Utils/Validators/initAppValidator";
-import {createRandomDigit, defineNumberOfDigits, setError} from "../Redux/actions";
+import {createRandomDigit, defineNumberOfDigits, setErrorInitGame} from "../Redux/initGameActions";
 import {Alert} from "./Alert";
-import {createRandomDigits} from "../Utils/Business_Logic/bl";
-import {rootReducer} from "../Redux/rootReducer";
+
 
 export const Init = () => {
     const dispatch = useDispatch();
-    const error = useSelector(state => state.init.error);
+    const error = useSelector(state => state.init.errorInitGame);
     const hiddenNumber = useSelector(state => state.init.hiddenNumber);
-    const numberOfDigi = useSelector(state => state.init.numberOfDigits);
+    const numberOfDigits = useSelector(state => state.init.numberOfDigits);
 
-    const [numberOfDigits, setNumberOfDigits] = useState('');
 
 
     return (
         <div>
             <select className="custom-select" onChange={(evt) => {
+                dispatch(defineNumberOfDigits(evt.target.value));
 
-                setNumberOfDigits(evt.target.value);
-                if (requiredNumberOfDigits(numberOfDigits)) {
-                    dispatch(defineNumberOfDigits(numberOfDigits));
-
-                }
 
             }}>
                 <option selected value="">Сколько цифр вы хотите отгадать</option>
@@ -35,15 +28,19 @@ export const Init = () => {
             <br/>
             <button className="btn btn-primary" onClick={() => {
                 if (requiredNumberOfDigits(numberOfDigits)) {
-                    dispatch(setError(''));
+                    dispatch(setErrorInitGame(''));
                     dispatch(createRandomDigit(numberOfDigits));
                 } else {
-                    dispatch(setError('Необходимо выбрать количество цифр, которые вы будете отгадывать'));
+                    dispatch(setErrorInitGame('Необходимо выбрать количество цифр, которые вы будете отгадывать'));
+                    dispatch(defineNumberOfDigits(''));
+                    dispatch(createRandomDigit(''));
+
+
                 }
-            }}>Начать игру
+            }}>Начать новую игру игру
             </button>
-            {error && <Alert text={error}/>}
-            {console.log(numberOfDigi)}
+            {!(error) && hiddenNumber ? window.open('/checkGame') : <Alert text={error}/>}
+            {console.log(numberOfDigits)}
             {console.log(hiddenNumber)}
 
 

@@ -1,15 +1,13 @@
-import {Form} from "./Components/Form";
-import {Table} from "./Components/tableComponent";
-import {Init} from "./Components/initialize";
 
+import {BrowserRouter} from "react-router-dom";
+import Pages from "./router/pages";
 function App() {
-  return (
-    <div className="container">
-        <Init/>
-      <Form/>
-        <Table/>
-    </div>
-  );
+    return (
+        <div className="App">
+            <BrowserRouter>
+                <Pages />
+            </BrowserRouter>
+        </div>
+    );
 }
-
 export default App;

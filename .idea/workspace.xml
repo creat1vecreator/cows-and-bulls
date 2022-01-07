@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a2fd8ac-9916-45c3-a6c5-36b73ba868bb" name="Changes" comment="divided logic, but can not access to variables from store.init">
+    <list default="true" id="8a2fd8ac-9916-45c3-a6c5-36b73ba868bb" name="Changes" comment="fixed problem with hidden value">
+      <change afterPath="$PROJECT_DIR$/src/Redux/checkingActions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/router/pages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/router/routes.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/Form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/Form.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/initialize.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/initialize.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/initGameActions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/checkingReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/checkingReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/initGameReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/initGameReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Utils/Business_Logic/bl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Utils/Business_Logic/bl.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +57,11 @@
       <updated>1641413408899</updated>
       <workItem from="1641413410694" duration="11000" />
       <workItem from="1641414649355" duration="18662000" />
-      <workItem from="1641481320301" duration="3308000" />
+      <workItem from="1641481320301" duration="11212000" />
+      <workItem from="1641552096316" duration="30000" />
+      <workItem from="1641552138532" duration="1181000" />
+      <workItem from="1641554877671" duration="745000" />
+      <workItem from="1641555674959" duration="1879000" />
     </task>
     <task id="LOCAL-00001" summary="problems with redux">
       <created>1641476512495</created>
@@ -84,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641488219637</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fixed problem with hidden value">
+      <created>1641491506885</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1641491506885</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -105,6 +126,7 @@
     <MESSAGE value="problems with redux" />
     <MESSAGE value="deleted unnecessary files" />
     <MESSAGE value="divided logic, but can not access to variables from store.init" />
-    <option name="LAST_COMMIT_MESSAGE" value="divided logic, but can not access to variables from store.init" />
+    <MESSAGE value="fixed problem with hidden value" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed problem with hidden value" />
   </component>
 </project>

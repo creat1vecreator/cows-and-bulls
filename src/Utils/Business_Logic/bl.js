@@ -8,3 +8,7 @@ export const createRandomDigits = (numberOfDigits) => {
     return res;
 
 }
+//сравнивает длину введённого числа с выбранным
+export const checkIfLengthIsEqual = (inputDigitsLength, chosenDigitsLength) => {
+   return  inputDigitsLength.length === chosenDigitsLength.length;
+}
